@@ -8,10 +8,10 @@ export function Hero() {
             <div className="hero-overlay"></div>
             <div className="hero-content container">
                 <h1 className="hero-title">
-                    Build Your Business With The <span className="highlight">Right People</span>
+                    Build Your Business With <span className="highlight">Strategic Consulting</span>
                 </h1>
                 <p className="hero-subtitle">
-                    Trusted manpower and contract staffing solutions for industrial and corporate growth.
+                    Expert consulting services and premium workforce solutions for industrial and corporate excellence.
                 </p>
                 <div className="hero-actions">
                     <a href="#contact" className="btn btn-secondary">
