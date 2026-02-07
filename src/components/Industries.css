@@ -1,0 +1,55 @@
+.industries-section {
+    background-color: var(--color-surface);
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.industry-card {
+    position: relative;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.industry-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.industry-card:hover img {
+    transform: scale(1.1);
+}
+
+.industry-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    transition: background 0.3s ease;
+}
+
+.industry-card:hover .industry-overlay {
+    background: linear-gradient(to top, rgba(10, 31, 68, 0.9), rgba(10, 31, 68, 0.4));
+}
+
+.industry-overlay h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-left: 3px solid var(--color-secondary);
+    padding-left: 0.75rem;
+}
