@@ -23,7 +23,7 @@ export function Navbar() {
                     <a href="#about" onClick={() => setIsOpen(false)}>About</a>
                     <a href="#services" onClick={() => setIsOpen(false)}>Services</a>
                     <a href="#industries" onClick={() => setIsOpen(false)}>Industries</a>
-                    <a href="#why-us" onClick={() => setIsOpen(false)}>Why Us</a>
+                    <a href="#candidates" onClick={() => setIsOpen(false)}>Job Seekers</a>
                     <a href="#contact" className="btn btn-secondary" onClick={() => setIsOpen(false)}>Partner With Us</a>
                 </div>
 

@@ -17,8 +17,8 @@ export function Hero() {
                     <a href="#contact" className="btn btn-secondary">
                         Hire Talent <ChevronRight size={20} />
                     </a>
-                    <a href="#contact" className="btn btn-outline">
-                        Partner With Us
+                    <a href="#candidates" className="btn btn-outline">
+                        Find a Job <ArrowRight size={20} />
                     </a>
                 </div>
             </div>

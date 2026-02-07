@@ -5,6 +5,7 @@ import { Services } from './components/Services';
 import { Industries } from './components/Industries';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { Clients } from './components/Clients';
+import { Candidates } from './components/Candidates';
 import { Process } from './components/Process';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -19,6 +20,7 @@ function App() {
       <Industries />
       <WhyChooseUs />
       <Clients />
+      <Candidates />
       <Process />
       <Contact />
       <Footer />
