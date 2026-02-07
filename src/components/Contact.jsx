@@ -40,7 +40,7 @@ export function Contact() {
                     </div>
 
                     <div className="contact-form-container">
-                        <form className="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST">
+                        <form className="contact-form" action="https://formspree.io/f/xbdajznw" method="POST">
                             <div className="form-group">
                                 <label>Full Name</label>
                                 <input type="text" name="name" placeholder="John Doe" required />
