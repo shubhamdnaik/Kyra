@@ -8,10 +8,10 @@ export function Hero() {
             <div className="hero-overlay"></div>
             <div className="hero-content container">
                 <h1 className="hero-title">
-                    Build Your Business With <span className="highlight">Strategic Consulting</span>
+                    Kyra Careers <span className="highlight">Consultancy</span>
                 </h1>
                 <p className="hero-subtitle">
-                    Expert consulting services and premium workforce solutions for industrial and corporate excellence.
+                    A premier consultancy service providing expert recruitment and workforce solutions.
                 </p>
                 <div className="hero-actions">
                     <a href="#contact" className="btn btn-secondary">
