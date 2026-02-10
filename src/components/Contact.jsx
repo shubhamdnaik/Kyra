@@ -59,7 +59,7 @@ export function Contact() {
                             </button>
                         </div>
 
-                        <form className="contact-form" action="https://formspree.io/f/xbdajznw" method="POST">
+                        <form className="contact-form" action="https://formspree.io/f/xbdalvgd" method="POST">
                             {/* Hidden field to identify user type in email */}
                             <input type="hidden" name="_subject" value={`New Inquiry from ${userType === 'company' ? 'Company' : 'Candidate'}`} />
 
