@@ -10,12 +10,7 @@ export function Footer() {
                     <div className="footer-brand">
                         <h3 className="footer-logo">Kyra Careers</h3>
                         <p>Reliable manpower solutions for industrial and corporate excellence.</p>
-                        <div className="social-links">
-                            <a href="#"><Facebook size={20} /></a>
-                            <a href="#"><Twitter size={20} /></a>
-                            <a href="#"><Linkedin size={20} /></a>
-                            <a href="#"><Instagram size={20} /></a>
-                        </div>
+
                     </div>
 
                     <div className="footer-links">
@@ -39,6 +34,15 @@ export function Footer() {
                     </div>
 
 
+                    <div className="footer-links">
+                        <h4>Follow Us</h4>
+                        <div className="social-links">
+                            <a href="#"><Facebook size={20} /></a>
+                            <a href="#"><Twitter size={20} /></a>
+                            <a href="#"><Linkedin size={20} /></a>
+                            <a href="#"><Instagram size={20} /></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="footer-bottom">
