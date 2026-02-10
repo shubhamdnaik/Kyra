@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 import './Footer.css';
 
 export function Footer() {
@@ -37,10 +37,9 @@ export function Footer() {
                     <div className="footer-links">
                         <h4>Follow Us</h4>
                         <div className="social-links">
-                            <a href="#"><Facebook size={20} /></a>
-                            <a href="#"><Twitter size={20} /></a>
-                            <a href="#"><Linkedin size={20} /></a>
-                            <a href="#"><Instagram size={20} /></a>
+                            <a href="https://www.linkedin.com/company/kyracareers/" target="_blank" rel="noopener noreferrer">
+                                <Linkedin size={32} />
+                            </a>
                         </div>
                     </div>
                 </div>
