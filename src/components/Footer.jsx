@@ -41,6 +41,7 @@ export function Footer() {
                                 <Linkedin size={32} />
                             </a>
                         </div>
+                        <p className="gstin-text">GSTIN: 29AAJCK7679K2ZI</p>
                     </div>
                 </div>
 
