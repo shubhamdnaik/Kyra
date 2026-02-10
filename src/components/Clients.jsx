@@ -3,11 +3,11 @@ import { Building, Factory, Landmark, Box, Truck } from 'lucide-react';
 import './Clients.css';
 
 const partners = [
-    { name: "Atlas Manufacturing", icon: <Factory size={40} /> },
+    { name: "Veerya Attachments", icon: <Factory size={40} /> },
     { name: "Global Logistics", icon: <Truck size={40} /> },
     { name: "Apex Constructions", icon: <Box size={40} /> },
-    { name: "TechCorp India", icon: <Building size={40} /> },
-    { name: "Union Steel", icon: <Landmark size={40} /> }
+    { name: "Insight Enterprise", icon: <Building size={40} /> },
+    { name: "Jindal Steel", icon: <Landmark size={40} /> }
 ];
 
 export function Clients() {
@@ -29,7 +29,7 @@ export function Clients() {
                     {/* Duplicate for visual balance if needed or add more */}
                     <div className="client-logo">
                         <Building size={40} />
-                        <span>Future Client</span>
+                        <span>And Many More</span>
                     </div>
                 </div>
             </div>
