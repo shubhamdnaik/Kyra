@@ -22,7 +22,7 @@ export function Contact() {
                             <div className="info-icon"><Phone size={20} /></div>
                             <div>
                                 <h5>Call Us</h5>
-                                <p>+91 98765 43210</p>
+                                <p>+91 63643 26900</p>
                             </div>
                         </div>
 
@@ -30,7 +30,7 @@ export function Contact() {
                             <div className="info-icon"><Mail size={20} /></div>
                             <div>
                                 <h5>Email Us</h5>
-                                <p>contact@kyracareers.com</p>
+                                <p>hr@kyracareers.org</p>
                             </div>
                         </div>
 
@@ -38,7 +38,7 @@ export function Contact() {
                             <div className="info-icon"><MapPin size={20} /></div>
                             <div>
                                 <h5>Visit Us</h5>
-                                <p>123 Corporate Park, Industrial Area<br />Mumbai, India - 400001</p>
+                                <p>Jeevan Galaxy, Triveni Main Road<br />Kamala Nehru Extension, Yeshwantpur<br />Bangalore-560022</p>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ export function Contact() {
 
                             <div className="form-group">
                                 <label>Phone Number</label>
-                                <input type="tel" name="phone" placeholder="+91 98765 43210" required />
+                                <input type="tel" name="phone" placeholder="+91 63643 26900" required />
                             </div>
 
                             <div className="form-group">
