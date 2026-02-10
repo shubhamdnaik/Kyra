@@ -38,14 +38,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    <div className="footer-newsletter">
-                        <h4>Newsletter</h4>
-                        <p>Subscribe for industry updates.</p>
-                        <div className="newsletter-form">
-                            <input type="email" placeholder="Your email" />
-                            <button className="btn btn-secondary">Go</button>
-                        </div>
-                    </div>
+
                 </div>
 
                 <div className="footer-bottom">
