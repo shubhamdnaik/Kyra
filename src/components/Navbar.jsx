@@ -17,7 +17,10 @@ export function Navbar() {
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="container navbar-content">
-                <a href="#" className="logo">Kyra Careers</a>
+                <a href="#" className="logo">
+                    <img src="/logo.jpeg" alt="Kyra Careers Logo" className="logo-img" />
+                    Kyra Careers
+                </a>
 
                 <div className={`nav-links ${isOpen ? 'active' : ''}`}>
                     <a href="#about" onClick={() => setIsOpen(false)}>About</a>

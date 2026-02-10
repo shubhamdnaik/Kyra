@@ -32,6 +32,17 @@
     letter-spacing: 0.5px;
     color: inherit;
     /* Inherits from navbar color */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    /* Optional: adds slight rounding */
 }
 
 .nav-links {
