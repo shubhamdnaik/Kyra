@@ -24,6 +24,15 @@ export function Contact() {
             if (response.ok) {
                 setIsSubmitted(true);
                 form.reset();
+                
+                // Google Analytics Conversion Tracking
+                if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+                    window.gtag('event', 'generate_lead', {
+                        'event_category': 'Contact',
+                        'event_label': userType === 'company' ? 'Company Inquiry' : 'Candidate Application',
+                        'value': 1
+                    });
+                }
             } else {
                 alert("Oops! There was a problem submitting your form.");
             }
