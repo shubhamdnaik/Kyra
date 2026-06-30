@@ -60,7 +60,7 @@ export function Candidates() {
                     <ScrollReveal variant="slide-left" delay={0.2}>
                         <div className="candidates-image">
                             <img
-                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                                src="/images/candidate_prof.png"
                                 alt="Professional woman smiling"
                             />
                             <div className="image-badge">

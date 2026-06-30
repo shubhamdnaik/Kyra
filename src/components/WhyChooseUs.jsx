@@ -34,7 +34,9 @@ export function WhyChooseUs() {
                         <a href="#contact" className="btn btn-primary mt-4">Get Started Today</a>
                     </div>
                     <div className="why-image">
-                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Handshake" />
+                        <img 
+                            src="/images/handshake.png" 
+                            alt="Handshake" />
                         <div className="trust-badge">
                             <h3>100%</h3>
                             <p>Client Satisfaction</p>
