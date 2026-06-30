@@ -4,6 +4,35 @@ import './Contact.css';
 
 export function Contact() {
     const [userType, setUserType] = useState('company'); // 'company' or 'candidate'
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        
+        setIsSubmitting(true);
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            if (response.ok) {
+                setIsSubmitted(true);
+                form.reset();
+            } else {
+                alert("Oops! There was a problem submitting your form.");
+            }
+        } catch (error) {
+            alert("Oops! There was a problem submitting your form.");
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
     return (
         <section className="section contact-section" id="contact">
@@ -59,7 +88,16 @@ export function Contact() {
                             </button>
                         </div>
 
-                        <form className="contact-form" action="https://formspree.io/f/xbdalvgd" method="POST">
+                        {isSubmitted ? (
+                            <div className="thank-you-message">
+                                <h3>Thank You!</h3>
+                                <p>We have received your message and will get back to you shortly.</p>
+                                <button className="btn btn-primary" onClick={() => setIsSubmitted(false)}>
+                                    Send Another Message
+                                </button>
+                            </div>
+                        ) : (
+                            <form className="contact-form" action="https://formspree.io/f/xbdalvgd" method="POST" onSubmit={handleSubmit}>
                             {/* Hidden field to identify user type in email */}
                             <input type="hidden" name="_subject" value={`New Inquiry from ${userType === 'company' ? 'Company' : 'Candidate'}`} />
 
@@ -102,10 +140,11 @@ export function Contact() {
                                 ></textarea>
                             </div>
 
-                            <button type="submit" className="btn btn-primary w-100">
-                                {userType === 'company' ? 'Send Inquiry' : 'Submit Application'} <Send size={18} />
+                            <button type="submit" className="btn btn-primary w-100" disabled={isSubmitting}>
+                                {isSubmitting ? 'Sending...' : (userType === 'company' ? 'Send Inquiry' : 'Submit Application')} {!isSubmitting && <Send size={18} />}
                             </button>
                         </form>
+                        )}
                     </div>
                 </div>
             </div>
